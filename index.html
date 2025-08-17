@@ -1,0 +1,273 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   SMK NU Tulungagung - Sarana Prasarana Sekolah
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+   /* Maintain aspect ratio and cover container */
+   .responsive-img-container {
+     position: relative;
+     width: 100%;
+     padding-top: 66.66%; /* 3:2 aspect ratio */
+     overflow: hidden;
+     border-radius: 0.5rem; /* rounded-lg */
+     box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4), 0 4px 6px -2px rgba(99, 102, 241, 0.1); /* shadow-2xl */
+   }
+   .responsive-img-container img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 0.5rem;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800 relative overflow-x-hidden">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-semibold text-indigo-600 flex items-center space-x-2" href="#">
+     <img alt="Logo SMK NU Tulungagung, a modern school emblem with blue and green colors" class="rounded-full max-h-10 w-auto" src="GV/Logo.png"/>
+     <span>
+      SMK NU Tulungagung
+     </span>
+    </a>
+    <div class="hidden md:flex space-x-8 font-medium text-gray-700">
+     <a class="hover:text-indigo-600 transition" href="#home">
+      Beranda
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#facilities">
+      Sarana &amp; Prasarana
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#about">
+      Tentang Kami
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#contact">
+      Kontak
+     </a>
+    </div>
+    <button aria-label="Toggle menu" class="md:hidden focus:outline-none text-gray-700" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#home">
+     Beranda
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#facilities">
+     Sarana &amp; Prasarana
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#about">
+     Tentang Kami
+    </a>
+    <a class="block px-6 py-3 hover:bg-indigo-50 transition" href="#contact">
+     Kontak
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section with decorative background images -->
+  <section class="pt-24 relative overflow-hidden" id="home">
+   <img alt="Abstrak bentuk geometris biru dan ungu dengan efek transparan dan gradasi, latar belakang dekoratif modern" class="pointer-events-none select-none absolute top-0 left-0 w-72 h-72 md:w-96 md:h-96 opacity-30 -translate-x-1/2 -translate-y-1/2" src="https://placehold.co/384x384/png?text=Abstrak+Geometris+1" style="filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.5));"/>
+   <img alt="Bentuk lingkaran besar berwarna ungu muda dengan efek blur dan transparansi sebagai latar belakang dekoratif" class="pointer-events-none select-none absolute bottom-0 right-0 w-72 h-72 md:w-96 md:h-96 opacity-25 translate-x-1/2 translate-y-1/2" src="https://placehold.co/384x384/png?text=Abstrak+Lingkaran+Blur" style="filter: blur(40px);"/>
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center md:items-start gap-12 relative z-10">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-indigo-900 drop-shadow-md">
+      Sarana &amp; Prasarana
+      <br/>
+      SMK NU Tulungagung
+     </h1>
+     <p class="text-lg md:text-xl mb-8 text-indigo-800 drop-shadow-sm">
+      Menyediakan fasilitas lengkap dan modern untuk mendukung proses belajar mengajar yang optimal dan nyaman.
+     </p>
+     <a class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="#facilities">
+      Lihat Fasilitas
+     </a>
+    </div>
+    <div class="md:w-1/2">
+    <div class="responsive-img-container">
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
+    <source src="GV/The Power of Sinergy.mp4" type="video/mp4" />
+    Browser Anda tidak mendukung tag video.
+  </video>
+</div>
+    </div>
+   </div>
+  </section>
+  <!-- Facilities Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="facilities">
+   <h2 class="text-3xl font-bold text-center text-indigo-700 mb-12 relative inline-block before:absolute before:-bottom-3 before:left-1/2 before:-translate-x-1/2 before:w-24 before:h-1 before:rounded-full before:bg-indigo-400 before:opacity-70">
+    Sarana &amp; Prasarana Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+     <div class="responsive-img-container">
+      <img alt="Laboratorium komputer modern dengan deretan komputer terbaru dan kursi ergonomis di SMK NU Tulungagung" src="GV/Lab1.png"/>
+     </div>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+       Laboratorium Komputer
+      </h3>
+      <p class="text-gray-600">
+       Dilengkapi dengan komputer dan perangkat lunak terkini untuk mendukung pembelajaran teknologi informasi.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+     <div class="responsive-img-container">
+      <img alt="Ruang kelas nyaman dan modern dengan meja dan kursi ergonomis serta pencahayaan alami di SMK NU Tulungagung" src="GV/Kelas1.png"/>
+     </div>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+       Ruang Kelas Nyaman
+      </h3>
+      <p class="text-gray-600">
+       Ruang kelas yang luas, bersih, dan dilengkapi dengan fasilitas multimedia untuk mendukung proses belajar yang interaktif.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+     <div class="responsive-img-container">
+      <img alt="Perpustakaan modern dengan rak buku lengkap dan area baca nyaman di SMK NU Tulungagung" src="GV/perpus1.png"/>
+     </div>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+       Perpustakaan
+      </h3>
+      <p class="text-gray-600">
+       Koleksi buku lengkap dan ruang baca yang nyaman untuk mendukung minat baca dan penelitian siswa.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+     <div class="responsive-img-container">
+      <img alt="Laboratorium elektronika dan mekatronika dengan peralatan canggih dan meja kerja di SMK NU Tulungagung" src="GV/swalayan1.png"/>
+     </div>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+       Swalayan Sekolah
+      </h3>
+      <p class="text-gray-600">
+       Fasilitas tertata rapi dan bersih menyediakan berbagai kebutuhan harian siswa dan staf, dengan pelayanan yang ramah, dan harga terjangkau.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+     <div class="responsive-img-container">
+      <img alt="Lapangan olahraga serbaguna dengan rumput hijau dan fasilitas basket serta voli di SMK NU Tulungagung" src="GV/Lap1.png"/>
+     </div>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+       Lapangan Olahraga
+      </h3>
+      <p class="text-gray-600">
+       Lapangan luas untuk berbagai cabang olahraga seperti voli dan sepak bola yang mendukung kegiatan ekstrakurikuler.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+     <div class="responsive-img-container">
+      <img alt="Ruang serta mengembangkan ide-ide inovatif siswa" src="GV/RK1.png"/>
+     </div>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+       Ruang Kreatif
+      </h3>
+      <p class="text-gray-600">
+       Ruang modern dan fungsional dilengkapi dengan peralatan podcast seperti mikrofon, laptop, dan layar monitor untuk mendukung kegiatan produksi konten digital.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="bg-indigo-50 py-20 relative overflow-hidden" id="about">
+   <img alt="Bentuk abstrak gelombang berwarna ungu muda dan biru dengan efek transparansi sebagai latar belakang dekoratif" class="pointer-events-none select-none absolute top-0 right-0 w-64 h-64 opacity-20 -translate-x-1/3 -translate-y-1/3" src="https://placehold.co/256x256/png?text=Gelombang+Abstrak+1" style="filter: blur(30px);"/>
+   <img alt="Bentuk abstrak gelombang berwarna biru muda dengan efek transparansi sebagai latar belakang dekoratif" class="pointer-events-none select-none absolute bottom-0 left-0 w-64 h-64 opacity-20 translate-x-1/3 translate-y-1/3" src="https://placehold.co/256x256/png?text=Gelombang+Abstrak+2" style="filter: blur(30px);"/>
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 relative z-10">
+    <div class="md:w-1/2">
+     <div class="responsive-img-container">
+      <img alt="Siswa dan guru sedang melakukan kegiatan belajar mengajar interaktif di ruang kelas SMK NU Tulungagung" src="GV/smknu1.png"/>
+     </div>
+    </div>
+    <div class="md:w-1/2">
+     <h2 class="text-3xl font-bold text-indigo-700 mb-6">
+      Tentang SMK NU Tulungagung
+     </h2>
+     <p class="text-gray-700 mb-4 leading-relaxed">
+      SMK NU Tulungagung adalah sekolah menengah kejuruan yang berkomitmen menyediakan pendidikan berkualitas dengan sarana dan prasarana modern. Kami mendukung pengembangan kompetensi siswa melalui fasilitas lengkap dan lingkungan belajar yang kondusif.
+     </p>
+     <p class="text-gray-700 leading-relaxed">
+      Dengan tenaga pengajar profesional dan fasilitas yang terus diperbarui, SMK NU Tulungagung siap mencetak generasi muda yang siap bersaing di dunia kerja dan industri.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="contact">
+   <h2 class="text-3xl font-bold text-indigo-700 mb-12 relative inline-block before:absolute before:-bottom-3 before:left-0 before:w-24 before:h-1 before:rounded-full before:bg-indigo-400 before:opacity-70">
+    Kontak Kami
+   </h2>
+   <div class="max-w-md mx-0 text-left space-y-6">
+    <div>
+     <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+      Alamat
+     </h3>
+     <p class="text-gray-700">
+      Jl. Pattimura gang 2 No.9, Pacet, Gedangsewu, Kec. Tulungagung, Kabupaten Tulungagung, Jawa Timur 66216
+     </p>
+    </div>
+      <div>
+     <h3 class="text-xl font-semibold mb-2 text-indigo-600">
+      Email
+     </h3>
+     <p class="text-gray-700">
+      sarprassmkbisota@gmail.com
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-700 text-indigo-100 py-8">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2025 SMK NU Tulungagung. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-white transition" href="https://www.facebook.com/SMKNUTulungagung" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-white transition" href="https://www.instagram.com/p/CMhhgPjDO2K/" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-white transition" href="https://www.tiktok.com/discover/smk-nu-tulungagung?is_from_webapp=1&sender_device=pc" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
